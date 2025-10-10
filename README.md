@@ -6,8 +6,12 @@
 Mit **UbuntuAnywhere** kannst du Ubuntu 22.04 direkt in Termux/Proot installieren und sogar eine Desktop-Umgebung deiner Wahl starten: KDE, Cinnamon, Budgie, XFCE, LXQt oder nur CLI. Selbst alte Fire-Tablets oder Android-Geräte ab Version 5.1.1 sind kein Problem.  
 
 ---
-
-## Features
+### Mindestanforderungen
+- ARM64 prozessor
+- 1 GB Ram (CLI Only)
+- 4 GB RAM (GUI)
+- min. 20 GB Speicher oder 32 GB SD-Karte
+### Features
 
 - Interaktive Benutzername & Passwort-Auswahl  
 - Minimalistische Desktop-Umgebungen für Termux:X11  
@@ -18,7 +22,7 @@ Mit **UbuntuAnywhere** kannst du Ubuntu 22.04 direkt in Termux/Proot installiere
 
 ---
 
-## Installation
+### Installation
 
 1. Installiere [Termux](https://f-droid.org/packages/com.termux/) auf deinem Gerät.  
 2. Optional: Installiere [Termux:X11](https://f-droid.org/packages/com.termux.x11/) für grafische Desktops.  
@@ -29,11 +33,18 @@ wget https://github.com/Ben-bit-code208/UbuntuAnywhere/raw/main/ubuntu-installer
 chmod +x ubuntu-installer.sh
 ```
 
-Starte die Installation:
+4. Starte die Installation:
 
 ```bash
 ./ubuntu-installer.sh
 ```
+5. dann insterliere IN ubuntu das skript
+```bash
+wget https://github.com/Ben-bit-code208/UbuntuAnywhere/raw/main/ubuntu-setup.sh
+chmod +x ubuntu-installer.sh
+./ubuntu-installer.sh
+```
+
 Folge den Anweisungen: Benutzername, Passwort, Desktop-Auswahl.
 
 Starte Ubuntu:
@@ -56,11 +67,11 @@ startxfce4
 lxqt-session
 ```
 
-## Feedback & Mitwirken
+### Feedback & Mitwirken
 Pull Requests, Issues und Vorschläge sind willkommen!
 Mach UbuntuAnywhere noch besser – zusammen mit der Community
 
-## Hinweise
+### Hinweise
 Die Desktop-Umgebungen sind minimalistische Versionen, speziell angepasst für Termux/Proot.
 
 Nutze Termux:X11, um grafische Oberflächen korrekt anzuzeigen.
@@ -76,8 +87,13 @@ Für die meisten DEs (KDE, Cinnamon, Budgie, XFCE, LXQt) gilt: Startbefehl im Te
 With **UbuntuAnywhere** you can install Ubuntu 22.04 directly in Termux/Proot and even launch a desktop environment of your choice: KDE, Cinnamon, Budgie, XFCE, LXQt, or just CLI. Even old Fire tablets or Android devices from version 5.1.1 onwards are no problem.
 
 ---
+### Minimum requirements
+- ARM64 processor
+- 1 GB RAM (CLI only)
+- 4 GB RAM (GUI)
+- at least 20 GB storage or 32 GB SD card
 
-## Features
+### Features
 
 - Interactive username & password selection
 - Minimalist desktop environments for Termux:X11
@@ -88,7 +104,7 @@ With **UbuntuAnywhere** you can install Ubuntu 22.04 directly in Termux/Proot an
 
 ---
 
-## Installation
+### Installation
 
 1. Install [Termux](https://f-droid.org/packages/com.termux/) on your device.
 2. Optional: Install [Termux:X11](https://f-droid.org/packages/com.termux.x11/) for graphical desktops.
@@ -104,13 +120,17 @@ Start the installation:
 ```bash
 ./ubuntu-installer.sh
 ```
+
+5. then install the script IN Ubuntu
+```bash
+wget https://github.com/Ben-bit-code208/UbuntuAnywhere/raw/main/ubuntu-setup.sh
+chmod +x ubuntu-installer.sh
+./ubuntu-installer.sh
+```
 Follow the instructions: username, password, desktop selection.
 
 Start Ubuntu:
 
-```bash
-./start-ubuntu.sh
-```
 Start the graphical desktop (depending on your selection):
 
 ```bash
@@ -126,11 +146,11 @@ startxfce4
 lxqt-session
 ```
 
-## Feedback & Contribution
+### Feedback & Contribution
 Pull requests, issues, and suggestions are welcome!
 Make UbuntuAnywhere even better – together with the community
 
-## Notes
+### Notes
 The desktop environments are minimalist versions, specially adapted for Termux/Proot.
 
 Use Termux:X11 to display graphical interfaces correctly.
